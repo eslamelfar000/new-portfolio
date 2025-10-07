@@ -1,14 +1,21 @@
 @import "/src/styles/extend.scss";
 
 div.category-filter {
-    display: inline-flex;
-    width: 100%;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
     margin: 0 auto;
     direction: ltr;
     @include media-breakpoint-down(xxl) {
-        max-width: 800px;
+            // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+    // @include media-breakpoint-down(xl) {
+    //     max-width: 900px;
+    // }
 }
 
 button.category-filter-button {
@@ -22,10 +29,12 @@ button.category-filter-button {
     border: 2px solid var(--theme-card-background)!important;
     color: var(--theme-texts-light-1);
     transition: none;
+    padding: 15px !important;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         border-width: 1px!important;
         min-width: 15%;
+        border-radius: 40px !important;
     }
 
     @include media-breakpoint-down(sm) {
@@ -59,8 +68,8 @@ span.category-filter-button-label {
 }
 
 span.category-filter-button-count {
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 7px;
+    margin-right: 7px;
     text-align: center;
     user-select: none;
     pointer-events: none;

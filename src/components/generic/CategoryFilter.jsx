@@ -61,7 +61,7 @@ function CategoryFilterButton({ category, minButtonWidthPercentage, isSelected, 
                 onTouchStart={onClick}
                 data-tooltip={tooltip}>
             <span className={`category-filter-button-label`}>{category.label}</span>
-            <span className={`category-filter-button-count`}></span>
+            {/* <span className={`category-filter-button-count`}></span> */}
         </button>
     )
 }

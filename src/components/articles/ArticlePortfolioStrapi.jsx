@@ -17,7 +17,7 @@ import { useStrapiApi } from "/src/hooks/strapiApi.js";
  * @constructor
  */
 function ArticlePortfolioStrapi({ dataWrapper, id }) {
-  const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null);
+  const [selectedItemCategoryId, setSelectedItemCategoryId] = useState('all');
   const [strapiData, setStrapiData] = useState({
     projects: [],
     categories: [],
@@ -93,7 +93,7 @@ function ArticlePortfolioStrapi({ dataWrapper, id }) {
             // Add "All" category
             {
               id: "all",
-              label: "All",
+              label: "All" + ` (${strapiData.projects.length})`,
               name: "All",
             },
             // Add dynamic categories from API with project counts
