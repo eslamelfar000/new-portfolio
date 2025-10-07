@@ -56,6 +56,9 @@ div.article-skills-item {
     background-color: transparent;
     border-radius: $standard-border-radius;
     padding: var(--padding);
+            background-color: var(--theme-boards-background);
+                padding: 10px;
+
 }
 
 div.article-skills-item-avatar-wrapper {
