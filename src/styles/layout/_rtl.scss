@@ -1,0 +1,711 @@
+/**
+ * RTL (Right-to-Left) Direction Styles
+ * Applied when Arabic language is selected
+ */
+
+// RTL direction class
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+// RTL layout adjustments
+.rtl {
+    // Navigation adjustments
+    .nav-sidebar {
+        .nav-link-list {
+            direction: rtl;
+        }
+        
+        .nav-link {
+            direction: rtl;
+            text-align: right;
+            
+            i {
+                margin-left: 10px;
+                margin-right: 0;
+                float: right;
+            }
+            
+            span {
+                float: right;
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+        
+        .nav-tools {
+            direction: rtl;
+            
+            .nav-tools-item {
+                float: right;
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    // Contact form adjustments
+    .article-contact-form {
+        .form-control {
+            text-align: right;
+            direction: rtl;
+        }
+        
+        .input-field-wrapper {
+            direction: rtl;
+            
+            .input-group-text {
+                border-left: 2px solid var(--form-border-color);
+                border-right: none;
+            }
+            
+            .form-control {
+                border-radius: 0 $standard-border-radius $standard-border-radius 0;
+            }
+            
+            &.input-field-wrapper-focused {
+                .input-group-text {
+                    border-left-color: var(--form-focus-border-color);
+                }
+            }
+        }
+    }
+    
+    // Form adjustments
+    .form-control {
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .form-label {
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .form-text {
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .form-check {
+        direction: rtl;
+        text-align: right;
+        
+        .form-check-input {
+            float: right;
+            margin-left: 0;
+            margin-right: 0.5rem;
+        }
+        
+        .form-check-label {
+            float: right;
+            margin-left: 0;
+            margin-right: 0.5rem;
+        }
+    }
+    
+    .form-select {
+        text-align: right;
+        direction: rtl;
+        
+        option {
+            text-align: right;
+            direction: rtl;
+        }
+    }
+    
+    // Article text adjustments
+    .article-text-item {
+        direction: rtl;
+        
+        .article-text-avatar-view-wrapper {
+            margin-left: var(--spacing);
+            margin-right: calc(var(--spacing)/4);
+            float: right;
+        }
+        
+        .article-text-excerpt {
+            direction: rtl;
+            text-align: right;
+            overflow: hidden;
+        }
+        
+        &.article-text-item-reverse {
+            .article-text-avatar-view-wrapper {
+                float: left;
+                margin-left: calc(var(--spacing)/4);
+                margin-right: var(--spacing);
+            }
+        }
+    }
+    
+    // Button adjustments
+    .btn {
+        direction: rtl;
+        text-align: right;
+        
+        i {
+            margin-left: 8px;
+            margin-right: 0;
+            float: right;
+        }
+        
+        &.btn-icon-left {
+            i {
+                margin-left: 8px;
+                margin-right: 0;
+                float: right;
+            }
+        }
+        
+        &.btn-icon-right {
+            i {
+                margin-right: 8px;
+                margin-left: 0;
+                float: left;
+            }
+        }
+        
+        &.btn-block {
+            text-align: center;
+        }
+    }
+    
+    // Modal adjustments
+    .modal-header {
+        direction: rtl;
+        text-align: right;
+        
+        .btn-close {
+            margin: calc(-.5 * var(--bs-modal-header-padding-y)) auto calc(-.5 * var(--bs-modal-header-padding-y)) calc(-.5 * var(--bs-modal-header-padding-x));
+        }
+    }
+    
+    .modal-body {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    .modal-footer {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Tooltip adjustments
+    .tooltip {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Notification adjustments
+    .notification {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Alert adjustments
+    .alert {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Badge adjustments
+    .badge {
+        direction: rtl;
+    }
+    
+    // Card adjustments
+    .card {
+        direction: rtl;
+        text-align: right;
+        
+        .card-header {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .card-body {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .card-footer {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    
+    // Dropdown adjustments
+    .dropdown-menu {
+        text-align: right;
+        
+        .dropdown-item {
+            text-align: right;
+        }
+    }
+    
+    // List adjustments
+    ul, ol {
+        padding-right: 20px;
+        padding-left: 0;
+        direction: rtl;
+        text-align: right;
+    }
+    
+    li {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // List group adjustments
+    .list-group {
+        direction: rtl;
+        text-align: right;
+        
+        .list-group-item {
+            direction: rtl;
+            text-align: right;
+            
+            .list-group-item-icon {
+                float: right;
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    // Breadcrumb adjustments
+    .breadcrumb {
+        direction: rtl;
+        text-align: right;
+        
+        .breadcrumb-item {
+            float: right;
+            
+            & + .breadcrumb-item {
+                padding-left: 0;
+                padding-right: 0.5rem;
+                
+                &::before {
+                    float: right;
+                    padding-left: 0;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+    
+    // Icon adjustments
+    .fa, .fas, .far, .fab {
+        &.fa-arrow-left {
+            transform: scaleX(-1);
+        }
+        
+        &.fa-arrow-right {
+            transform: scaleX(-1);
+        }
+    }
+    
+    // Article cards adjustments
+    .article-cards {
+        .article-cards-item {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .article-cards-item-content {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .article-cards-item-link {
+            right: auto;
+            left: 10px;
+        }
+        
+        .article-cards-item-avatar {
+            float: right;
+            margin-left: 0;
+            margin-right: 15px;
+        }
+    }
+    
+    // Article skills adjustments
+    .article-skills {
+        .skill-item {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    
+    // Article timeline adjustments
+    .article-timeline {
+        .timeline-item {
+            direction: rtl;
+            text-align: right;
+            
+            .timeline-content {
+                direction: rtl;
+                text-align: right;
+            }
+        }
+    }
+    
+    // Article portfolio adjustments
+    .article-portfolio {
+        .article-portfolio-item {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .article-portfolio-item-avatar {
+            right: auto;
+            left: calc(var(--avatar-size)*-0.13);
+        }
+        
+        .article-portfolio-item-title {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .article-portfolio-item-title-category {
+            margin-left: 0;
+            margin-right: 8px;
+        }
+    }
+    
+    // Article testimonials adjustments
+    .article-testimonials {
+        .testimonial-item {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    
+    // Article info list adjustments
+    .article-info-list {
+        .article-info-list-item {
+            direction: rtl;
+            text-align: right;
+            
+            .article-info-list-item-avatar {
+                border-radius: 0 $standard-border-radius $standard-border-radius 0;
+                float: right;
+                margin-left: 0;
+                margin-right: 15px;
+            }
+            
+            .article-info-list-item-content {
+                direction: rtl;
+                text-align: right;
+                overflow: hidden;
+            }
+        }
+    }
+    
+    // Article facts adjustments
+    .article-facts {
+        .fact-item {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    
+    // Article threads adjustments
+    .article-threads {
+        .thread-item {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    
+    // Article stack adjustments
+    .article-stack {
+        .stack-item {
+            direction: rtl;
+            text-align: right;
+        }
+    }
+    
+    // Section title adjustments
+    .section-title {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Section body adjustments
+    .section-body {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Layout adjustments
+    .layout {
+        direction: rtl;
+    }
+    
+    // Navigation header adjustments
+    .nav-header {
+        direction: rtl;
+        
+        .nav-header-mobile {
+            direction: rtl;
+            
+            .nav-header-mobile-toggle {
+                float: right;
+                margin-left: 0;
+                margin-right: 15px;
+            }
+            
+            .nav-header-mobile-brand {
+                float: right;
+                text-align: right;
+            }
+        }
+        
+        .nav-header-desktop {
+            direction: rtl;
+            
+            .nav-header-brand {
+                float: right;
+                text-align: right;
+            }
+            
+            .nav-header-tools {
+                float: left;
+                text-align: left;
+            }
+        }
+    }
+    
+    // Sidebar adjustments
+    .nav-sidebar {
+        direction: rtl;
+    }
+    
+    // Main content adjustments
+    .layout-main {
+        direction: rtl;
+    }
+    
+    // Footer adjustments
+    .layout-footer {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    // Preloader adjustments
+    .preloader {
+        direction: rtl;
+        
+        .preloader-window {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .preloader-window-content {
+            direction: rtl;
+        }
+        
+        .preloader-window-info {
+            direction: rtl;
+            text-align: right;
+            
+            .preloader-window-info-title {
+                direction: rtl;
+                text-align: right;
+                
+                .preloader-title {
+                    direction: rtl;
+                    text-align: right;
+                }
+            }
+            
+            .preloader-window-info-developer {
+                direction: rtl;
+                text-align: right;
+                
+                .preloader-subtitle {
+                    direction: rtl;
+                    text-align: right;
+                }
+            }
+        }
+        
+        .preloader-window-logo {
+            float: right;
+            margin-left: 0;
+            margin-right: 15px;
+        }
+    }
+    
+    // Floating elements adjustments
+    .floating-element {
+        float: right;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    
+    // Avatar adjustments
+    .avatar-view {
+        float: right;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    
+    // Icon adjustments for floating elements
+    .icon-wrapper {
+        float: right;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    
+    // Float adjustments
+    .float-start {
+        float: right !important;
+    }
+    
+    .float-end {
+        float: left !important;
+    }
+    
+    .float-left {
+        float: right !important;
+    }
+    
+    .float-right {
+        float: left !important;
+    }
+    
+    // Clear float adjustments
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    // Position adjustments
+    .position-absolute {
+        &.start-0 {
+            left: auto !important;
+            right: 0 !important;
+        }
+        
+        &.end-0 {
+            right: auto !important;
+            left: 0 !important;
+        }
+    }
+    
+    .position-relative {
+        &.start-0 {
+            left: auto !important;
+            right: 0 !important;
+        }
+        
+        &.end-0 {
+            right: auto !important;
+            left: 0 !important;
+        }
+    }
+    
+    // Margin and padding adjustments for common elements
+    .ms-auto {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+    
+    .me-auto {
+        margin-right: 0 !important;
+        margin-left: auto !important;
+    }
+    
+    // Margin start/end utilities
+    .ms-0 { margin-left: 0 !important; margin-right: 0 !important; }
+    .ms-1 { margin-left: 0 !important; margin-right: 0.25rem !important; }
+    .ms-2 { margin-left: 0 !important; margin-right: 0.5rem !important; }
+    .ms-3 { margin-left: 0 !important; margin-right: 1rem !important; }
+    .ms-4 { margin-left: 0 !important; margin-right: 1.5rem !important; }
+    .ms-5 { margin-left: 0 !important; margin-right: 3rem !important; }
+    
+    .me-0 { margin-right: 0 !important; margin-left: 0 !important; }
+    .me-1 { margin-right: 0 !important; margin-left: 0.25rem !important; }
+    .me-2 { margin-right: 0 !important; margin-left: 0.5rem !important; }
+    .me-3 { margin-right: 0 !important; margin-left: 1rem !important; }
+    .me-4 { margin-right: 0 !important; margin-left: 1.5rem !important; }
+    .me-5 { margin-right: 0 !important; margin-left: 3rem !important; }
+    
+    // Padding start/end utilities
+    .ps-0 { padding-left: 0 !important; padding-right: 0 !important; }
+    .ps-1 { padding-left: 0 !important; padding-right: 0.25rem !important; }
+    .ps-2 { padding-left: 0 !important; padding-right: 0.5rem !important; }
+    .ps-3 { padding-left: 0 !important; padding-right: 1rem !important; }
+    .ps-4 { padding-left: 0 !important; padding-right: 1.5rem !important; }
+    .ps-5 { padding-left: 0 !important; padding-right: 3rem !important; }
+    
+    .pe-0 { padding-right: 0 !important; padding-left: 0 !important; }
+    .pe-1 { padding-right: 0 !important; padding-left: 0.25rem !important; }
+    .pe-2 { padding-right: 0 !important; padding-left: 0.5rem !important; }
+    .pe-3 { padding-right: 0 !important; padding-left: 1rem !important; }
+    .pe-4 { padding-right: 0 !important; padding-left: 1.5rem !important; }
+    .pe-5 { padding-right: 0 !important; padding-left: 3rem !important; }
+    
+    // Border utilities
+    .border-start {
+        border-left: none !important;
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+    
+    .border-end {
+        border-right: none !important;
+        border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+    
+    // Border radius utilities
+    .rounded-start {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-top-right-radius: var(--bs-border-radius) !important;
+        border-bottom-right-radius: var(--bs-border-radius) !important;
+    }
+    
+    .rounded-end {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: var(--bs-border-radius) !important;
+        border-bottom-left-radius: var(--bs-border-radius) !important;
+    }
+    
+    // Text alignment utilities
+    .text-start {
+        text-align: right !important;
+    }
+    
+    .text-end {
+        text-align: left !important;
+    }
+    
+    // Flex utilities
+    .flex-row-reverse {
+        flex-direction: row !important;
+    }
+    
+    .flex-row {
+        flex-direction: row-reverse !important;
+    }
+}
+
+// RTL specific utility classes
+.rtl-text {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl-layout {
+    direction: rtl;
+}
+
+.rtl-mirror {
+    transform: scaleX(-1);
+} 

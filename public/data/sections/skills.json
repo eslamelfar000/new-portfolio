@@ -1,0 +1,774 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Skills",
+                "title_short_nav": "Skills",
+                "title_long_prefix": "Explore",
+                "title_long": "My {{Skill Set}}"
+            },
+            "ar": {
+                "title_short": "المهارات",
+                "title_short_nav": "المهارات",
+                "title_long_prefix": "استكشف",
+                "title_long": "{{مجموعة}} مهاراتي"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "#007bff", "fill": "#fff"},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Web}} Development",
+                            "text": "Building responsive and high-performance websites using modern technologies!"
+                        },
+                        "ar": {
+                            "title": "تطوير {{الويب}}",
+                            "text": "بناء مواقع ويب متجاوبة وعالية الأداء باستخدام التقنيات الحديثة!"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-mobile-screen-button",
+                    "faIconColors": {"bg": "#28a745", "fill": "#fff"},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{React}} Applications",
+                            "text": "Creating dynamic and interactive user interfaces with React.js!"
+                        },
+                        "ar": {
+                            "title": "تطبيقات {{React}}",
+                            "text": "إنشاء واجهات مستخدم ديناميكية وتفاعلية باستخدام React.js!"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-palette",
+                    "faIconColors": {"bg": "#dc3545", "fill": "#fff"},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{UI/UX}} Design",
+                            "text": "Designing beautiful and user-friendly interfaces!"
+                        },
+                        "ar": {
+                            "title": "تصميم {{واجهة المستخدم}}",
+                            "text": "تصميم واجهات جميلة وسهلة الاستخدام!"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-rocket",
+                    "faIconColors": {"bg": "#ffc107", "fill": "#000"},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Performance}} Optimization",
+                            "text": "Optimizing websites for speed and efficiency!"
+                        },
+                        "ar": {
+                            "title": "تحسين {{الأداء}}",
+                            "text": "تحسين المواقع للسرعة والكفاءة!"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-brands fa-wordpress",
+                    "faIconColors": {"bg": "#21759b", "fill": "#fff"},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{WordPress}} Development",
+                            "text": "Building custom WordPress themes and plugins!"
+                        },
+                        "ar": {
+                            "title": "تطوير {{WordPress}}",
+                            "text": "بناء قوالب وإضافات WordPress مخصصة!"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "bi bi-journal-code",
+                    "faIconColors": {"bg": "#21759b", "fill": "#fff"},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Next.js}} Applications",
+                            "text": "Building server-rendered React applications with Next.js!"
+                        },
+                        "ar": {
+                            "title": "تطوير {{Next.js}}",
+                            "text": "بناء تطبيقات React معاد تقديمها على الخادم باستخدام Next.js!"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Web Development"},
+                "ar": {"title": "تطوير الويب"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-html5",
+                    "faIconColors": {"bg": "", "fill": "#E34F26"},
+                    "locales": {
+                        "en": {
+                            "title": "HTML5",
+                            "text": "Proficient in creating semantic and accessible HTML structure.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "HTML5",
+                            "text": "ماهر في إنشاء هيكل HTML دلالي وقابل للوصول.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-css3-alt",
+                    "faIconColors": {"bg": "", "fill": "#1572B6"},
+                    "locales": {
+                        "en": {
+                            "title": "CSS3",
+                            "text": "Creating responsive and modern designs with CSS3.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "CSS3",
+                            "text": "إنشاء تصاميم متجاوبة وحديثة باستخدام CSS3.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-brands fa-js",
+                    "faIconColors": {"bg": "", "fill": "#F7DF1E"},
+                    "locales": {
+                        "en": {
+                            "title": "JavaScript (ES6)",
+                            "text": "Modern JavaScript for dynamic web applications.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "JavaScript (ES6)",
+                            "text": "JavaScript حديث للتطبيقات الويب الديناميكية.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-brands fa-bootstrap",
+                    "faIconColors": {"bg": "", "fill": "#7952B3"},
+                    "locales": {
+                        "en": {
+                            "title": "Bootstrap",
+                            "text": "Responsive design framework for rapid development.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Bootstrap",
+                            "text": "إطار عمل التصميم المتجاوب للتطوير السريع.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-brands fa-sass",
+                    "faIconColors": {"bg": "", "fill": "#CC6699"},
+                    "locales": {
+                        "en": {
+                            "title": "SASS",
+                            "text": "CSS preprocessor for maintainable stylesheets.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "SASS",
+                            "text": "معالج CSS مسبق لأوراق الأنماط القابلة للصيانة.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "bi bi-filetype-json",
+                    "faIconColors": {"bg": "", "fill": "gold"},
+                    "locales": {
+                        "en": {
+                            "title": "JSON",
+                            "text": "Data interchange format for APIs and web services.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "JSON",
+                            "text": "تنسيق تبادل البيانات للواجهات البرمجية وخدمات الويب.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "img": "",
+                    "faIcon": "bi bi-brush",
+                    "faIconColors": {"bg": "", "fill": "cyan"},
+                    "locales": {
+                        "en": {
+                            "title": "TailwindCss",
+                            "text": "Utility-first CSS framework for rapid UI development.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "TailwindCss",
+                            "text": "إطار عمل CSS يعتمد على الأدوات لتطوير واجهات المستخدم بسرعة.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "React Ecosystem"},
+                "ar": {"title": "بيئة React"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-react",
+                    "faIconColors": {"bg": "", "fill": "#61DAFB"},
+                    "locales": {
+                        "en": {
+                            "title": "React JS",
+                            "text": "Building component-based user interfaces.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "React JS",
+                            "text": "بناء واجهات مستخدم قائمة على المكونات.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "bi bi-journal-code",
+                    "faIconColors": {"bg": "", "fill": "white"},
+                    "locales": {
+                        "en": {
+                            "title": "Next JS",
+                            "text": "Full-stack React framework for production.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Next JS",
+                            "text": "إطار عمل React كامل المكدس للإنتاج.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {"bg": "", "fill": "#764ABC"},
+                    "locales": {
+                        "en": {
+                            "title": "Redux",
+                            "text": "State management for React applications.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Redux",
+                            "text": "إدارة الحالة لتطبيقات React.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-tools",
+                    "faIconColors": {"bg": "", "fill": "#764ABC"},
+                    "locales": {
+                        "en": {
+                            "title": "Redux Toolkit",
+                            "text": "Modern Redux development with simplified APIs.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Redux Toolkit",
+                            "text": "تطوير Redux الحديث مع واجهات برمجية مبسطة.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "bi bi-typescript",
+                    "faIconColors": {"bg": "", "fill": "#3178C6"},
+                    "locales": {
+                        "en": {
+                            "title": "TypeScript",
+                            "text": "Typed JavaScript for better development experience.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "TypeScript",
+                            "text": "JavaScript مُكتوب لخبرة تطوير أفضل.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "fa-solid fa-vial",
+                    "faIconColors": {"bg": "", "fill": "#C21325"},
+                    "locales": {
+                        "en": {
+                            "title": "Jest",
+                            "text": "Testing framework for React applications.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Jest",
+                            "text": "إطار عمل الاختبار لتطبيقات React.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 4,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "CMS & Site Builders"},
+                "ar": {"title": "أنظمة إدارة المحتوى"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-wordpress",
+                    "faIconColors": {"bg": "", "fill": "#21759B"},
+                    "locales": {
+                        "en": {
+                            "title": "WordPress",
+                            "text": "Custom theme and plugin development.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "WordPress",
+                            "text": "تطوير القوالب والإضافات المخصصة.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-cogs",
+                    "faIconColors": {"bg": "", "fill": "darkred"},
+                    "locales": {
+                        "en": {
+                            "title": "CMS",
+                            "text": "Content management system development.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "CMS",
+                            "text": "تطوير أنظمة إدارة المحتوى.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-puzzle-piece",
+                    "faIconColors": {"bg": "", "fill": "lightblue"},
+                    "locales": {
+                        "en": {
+                            "title": "Elementor",
+                            "text": "Page builder for WordPress websites.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Elementor",
+                            "text": "منشئ الصفحات لمواقع WordPress.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 5,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Version Control & Collaboration"},
+                "ar": {"title": "التحكم في الإصدارات والتعاون"}
+            },
+            "settings": {
+                "max_items_per_row": 2,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-git",
+                    "faIconColors": {"bg": "", "fill": "#F05032"},
+                    "locales": {
+                        "en": {
+                            "title": "Git",
+                            "text": "Version control and collaboration.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Git",
+                            "text": "التحكم في الإصدارات والتعاون.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-github",
+                    "faIconColors": {"bg": "", "fill": "lightgray"},
+                    "locales": {
+                        "en": {
+                            "title": "GitHub",
+                            "text": "Code hosting and collaboration platform.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "GitHub",
+                            "text": "منصة استضافة الكود والتعاون.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 6,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Backend & API"},
+                "ar": {"title": "الخلفية والواجهات البرمجية"}
+            },
+            "settings": {
+                "max_items_per_row": 2,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-server",
+                    "faIconColors": {"bg": "", "fill": "lightgreen"},
+                    "locales": {
+                        "en": {
+                            "title": "API",
+                            "text": "RESTful API development and integration.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "API",
+                            "text": "تطوير وتكامل RESTful API.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-exchange-alt",
+                    "faIconColors": {"bg": "", "fill": "white"},
+                    "locales": {
+                        "en": {
+                            "title": "Restful API",
+                            "text": "Building scalable web services.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "Restful API",
+                            "text": "بناء خدمات ويب قابلة للتطوير.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 7,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Soft Skills"},
+                "ar": {"title": "المهارات الناعمة"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-lightbulb",
+                    "faIconColors": {"bg": "", "fill": "#FFD700"},
+                    "locales": {
+                        "en": {
+                            "title": "UI Innovation",
+                            "text": "Creating innovative user interface solutions.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "ابتكار واجهة المستخدم",
+                            "text": "إنشاء حلول مبتكرة لواجهة المستخدم.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-bullseye",
+                    "faIconColors": {"bg": "", "fill": "#007bff"},
+                    "locales": {
+                        "en": {
+                            "title": "Design Precision",
+                            "text": "Attention to detail in design implementation.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "دقة التصميم",
+                            "text": "الاهتمام بالتفاصيل في تنفيذ التصميم.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-calendar",
+                    "faIconColors": {"bg": "", "fill": "#28a745"},
+                    "locales": {
+                        "en": {
+                            "title": "Project Scheduling",
+                            "text": "Effective project planning and time management.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "جدولة المشاريع",
+                            "text": "التخطيط الفعال للمشاريع وإدارة الوقت.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-sync",
+                    "faIconColors": {"bg": "", "fill": "#dc3545"},
+                    "locales": {
+                        "en": {
+                            "title": "Tech Adaptability",
+                            "text": "Quick learning and adaptation to new technologies.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "التكيف التقني",
+                            "text": "التعلم السريع والتكيف مع التقنيات الجديدة.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-solid fa-users",
+                    "faIconColors": {"bg": "", "fill": "#6f42c1"},
+                    "locales": {
+                        "en": {
+                            "title": "Team Collaboration",
+                            "text": "Working effectively in cross-functional teams.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "التعاون الجماعي",
+                            "text": "العمل بفعالية في فرق متعددة الوظائف.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "fa-solid fa-comments",
+                    "faIconColors": {"bg": "", "fill": "#20c997"},
+                    "locales": {
+                        "en": {
+                            "title": "Client Communication",
+                            "text": "Clear and effective client communication.",
+                            "level": ""
+                        },
+                        "ar": {
+                            "title": "تواصل العملاء",
+                            "text": "تواصل واضح وفعال مع العملاء.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 8,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Languages"},
+                "ar": {"title": "اللغات"}
+            },
+            "settings": {
+                "max_items_per_row": 2,
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": true
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/flags/ar-eg.svg",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "Arabic",
+                            "text": "Native speaker with excellent communication skills.",
+                            "level": "Native"
+                        },
+                        "ar": {
+                            "title": "العربية",
+                            "text": "متحدث أصلي مع مهارات تواصل ممتازة.",
+                            "level": "أم"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "images/flags/en-us.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "percentage": null,
+                    "locales": {
+                        "en": {
+                            "title": "English",
+                            "text": "Full professional proficiency in both spoken and written English.",
+                            "level": "Full Professional Proficiency"
+                        },
+                        "ar": {
+                            "title": "الإنجليزية",
+                            "text": "كفاءة مهنية كاملة في الإنجليزية المنطوقة والمكتوبة.",
+                            "level": "كفاءة مهنية كاملة"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

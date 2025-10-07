@@ -1,0 +1,14 @@
+@import "/src/styles/extend.scss";
+
+div.date-badge-wrapper-transparent {
+    .date-badge {
+        background-color: transparent;
+        color: var(--theme-texts-light);
+    }
+}
+
+html[dir="rtl"] div.date-badge-wrapper {
+    .date-badge i {
+        transform: rotate(180deg);
+    }
+}

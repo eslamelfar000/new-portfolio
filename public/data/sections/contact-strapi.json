@@ -1,0 +1,14 @@
+{
+  "component": "ArticleContactFormStrapi",
+  "locales": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch with me",
+    "description": "Feel free to reach out if you have any questions or would like to discuss potential opportunities."
+  },
+  "settings": {
+    "emailJsPublicKey": "",
+    "emailJsServiceId": "",
+    "emailJsTemplateId": ""
+  },
+  "items": []
+} 

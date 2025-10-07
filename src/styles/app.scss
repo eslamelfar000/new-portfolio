@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+// Base parameters...
+@import 'constants';
+
+// Importing plugins...
+@import 'bootstrap/scss/bootstrap';
+@import "swiper/swiper-bundle.css";
+
+// Importing core FontAwesome styling file...
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// Our project needs Solid + Brands
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+
+// Importing PrimeIcons...
+@import "primeicons/primeicons.css";
+
+// Importing styles...
+@import "root-flags";
+@import "layout/page";
+@import "layout/typography";
+@import "layout/rtl";
+@import "customization/primitives-customization";
+@import "customization/bootstrap-customization";
+@import "customization/plugin-customization";
+
+
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4,
+html[lang="ar"] h5,
+html[lang="ar"] h6,
+html[lang="ar"] p,
+html[lang="ar"] span,
+html[lang="ar"] a,
+html[lang="ar"] button,
+html[lang="ar"] input,
+html[lang="ar"] textarea,
+html[lang="ar"] select,
+html[lang="ar"] label,
+html[lang="ar"] li,
+html[lang="ar"] ul,
+html[lang="ar"] ol,
+html[lang="ar"] div,
+html[lang="ar"] span,
+html[lang="ar"] a{
+    font-family: 'El Messiri', sans-serif !important;
+}
