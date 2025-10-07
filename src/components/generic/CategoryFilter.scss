@@ -10,8 +10,8 @@ div.category-filter {
     max-width: 100%;
     margin: 0 auto;
     direction: ltr;
-    @include media-breakpoint-down(xxl) {
-            // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    @include media-breakpoint-down(sm) {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     // @include media-breakpoint-down(xl) {
     //     max-width: 900px;
@@ -24,7 +24,7 @@ button.category-filter-button {
     outline: none !important;
     box-shadow: none !important;
     text-align: center !important;
-
+    height: 100%;
     background-color: var(--theme-boards-background);
     border: 2px solid var(--theme-card-background)!important;
     color: var(--theme-texts-light-1);
@@ -35,10 +35,6 @@ button.category-filter-button {
         border-width: 1px!important;
         min-width: 15%;
         border-radius: 40px !important;
-    }
-
-    @include media-breakpoint-down(sm) {
-        padding: 0.3rem 0;
     }
 }
 
