@@ -43,7 +43,7 @@ div.article-text-avatar-view-wrapper {
 
     min-width: var(--avatar-size);
     // min-height: calc(var(--avatar-size)/1.2);
-    width: var(--avatar-size);
+    // width: var(--avatar-size);
     // height: calc(var(--avatar-size)/1.2);
 
     margin-left: calc(var(--spacing)/4);
@@ -58,7 +58,7 @@ div.article-text-avatar-view-wrapper {
 
 div.article-text-avatar-view {
     height: 100%;
-    width: 100%;
+    width: 100% !important;
     background-color: transparent;
     font-size: calc(var(--avatar-size) / 1.75);
     @include media-breakpoint-down($column-breakpoint) {

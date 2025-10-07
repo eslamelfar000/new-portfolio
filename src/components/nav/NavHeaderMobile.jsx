@@ -13,9 +13,9 @@ function NavHeaderMobile({ profile, links }) {
                 <NavProfileCard profile={profile}
                                 expanded={true}/>
 
-                <div className={`left-tool-container`}>
+                {/* <div className={`left-tool-container`}>
                     <NavToolLanguagePicker/>
-                </div>
+                </div> */}
 
                 <div className={`right-tool-container`}>
                     <NavToolThemePicker/>
