@@ -1,0 +1,6 @@
+# Resume PDF Placeholder
+
+This is a placeholder file for the resume PDF.
+Replace this file with your actual resume PDF.
+
+The resume downloader will be visible once this file exists and the resumePdfUrl in profile.json points to it. 

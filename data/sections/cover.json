@@ -1,0 +1,198 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Welcome!",
+                "title_short_nav": "About me",
+                "title_long_prefix": "Hello...",
+                "title_long": "I'm {{Eslam Saber Elfar!}}"
+            },
+            "ar": {
+                "title_short": "مرحباً!",
+                "title_short_nav": "عني",
+                "title_long_prefix": "أهلاً...",
+                "title_long": "أنا {{إسلام صابر الفار!}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleInlineList",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "display_as_list_if_width_is_lower_than": 380
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Damietta, Egypt",
+                    "link": {"href": "", "tooltipString": ""},
+                    "faIcon": "pi pi-map-marker"
+                },
+                {
+                    "id": 2,
+                    "label": "eslamsaber707@gmail.com",
+                    "link": {"href": "mailto:eslamsaber707@gmail.com", "tooltipString": "email_me"},
+                    "faIcon": "fa-regular fa-envelope"
+                },
+                {
+                    "id": 3,
+                    "label": "+201093729234",
+                    "link": {"href": "tel:+201093729234", "tooltipString": "call_me"},
+                    "faIcon": "fa-solid fa-phone"
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleText",
+            "locales": {
+                "en": {"title": "{{A little bit}} about me..."},
+                "ar": {"title": "{{قليلاً}} عني..."}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/my-img2.jpeg",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "text": "<p>I'm a {{Front-End Developer}} with [[2+ years]] of experience building scalable and high-performance websites and web applications using React.js, Next.js, and WordPress. Skilled in creating responsive user interfaces, optimizing performance, and implementing SEO-friendly architectures.</p><p>Experienced in collaborating with cross-functional teams to deliver clean, maintainable code and drive user engagement. I specialize in creating reusable React.js components, optimizing website speed by 35% via optimization techniques, and building interactive UI components that reduce bounce rates by 15-20%.</p><p>I look forward to collaborating [[with you!]]</p>"
+                        },
+                        "ar": {
+                            "text": "<p>أنا {{مطور واجهة أمامية}} بخبرة [[أكثر من سنتين]] في بناء مواقع ويب وتطبيقات ويب قابلة للتطوير وعالية الأداء باستخدام React.js و Next.js و WordPress. ماهر في إنشاء واجهات مستخدم متجاوبة وتحسين الأداء وتنفيذ البنى الصديقة لمحركات البحث.</p><p>خبرة في التعاون مع فرق متعددة الوظائف لتقديم كود نظيف وقابل للصيانة ودفع تفاعل المستخدمين. أتخصص في إنشاء مكونات React.js قابلة لإعادة الاستخدام وتحسين سرعة الموقع بنسبة 35% عبر تقنيات التحسين وبناء مكونات واجهة تفاعلية تقلل معدل الارتداد بنسبة 15-20%.</p><p>أتطلع للتعاون [[معك!]]</p>"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "component": "ArticleInfoList",
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "locales": {
+                "en": {"title": "Personal {{interests}}"},
+                "ar": {"title": "الاهتمامات {{الشخصية}}"}
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "locales": {
+                        "en": {
+                            "title": "{{Web}} Development",
+                            "text": "Building modern and responsive web applications."
+                        },
+                        "ar": {
+                            "title": "تطوير {{الويب}}",
+                            "text": "بناء تطبيقات ويب حديثة ومتجاوبة."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-palette",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "locales": {
+                        "en": {
+                            "title": "{{UI/UX}} Design",
+                            "text": "Creating beautiful and user-friendly interfaces."
+                        },
+                        "ar": {
+                            "title": "تصميم {{واجهة المستخدم}}",
+                            "text": "إنشاء واجهات جميلة وسهلة الاستخدام."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-rocket",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "locales": {
+                        "en": {
+                            "title": "{{Performance}} Optimization",
+                            "text": "Optimizing websites for speed and efficiency."
+                        },
+                        "ar": {
+                            "title": "تحسين {{الأداء}}",
+                            "text": "تحسين المواقع للسرعة والكفاءة."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-users",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "locales": {
+                        "en": {
+                            "title": "{{Team}} Collaboration",
+                            "text": "Working effectively in cross-functional teams."
+                        },
+                        "ar": {
+                            "title": "التعاون {{الجماعي}}",
+                            "text": "العمل بفعالية في فرق متعددة الوظائف."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "locales": {
+                        "en": {
+                            "title": "{{Learning}} New Technologies",
+                            "text": "Staying updated with the latest web development trends."
+                        },
+                        "ar": {
+                            "title": "تعلم {{التقنيات الجديدة}}",
+                            "text": "البقاء محدثاً بأحدث اتجاهات تطوير الويب."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-lightbulb",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "locales": {
+                        "en": {
+                            "title": "{{Problem}} Solving",
+                            "text": "Finding creative solutions to complex challenges."
+                        },
+                        "ar": {
+                            "title": "حل {{المشاكل}}",
+                            "text": "إيجاد حلول إبداعية للتحديات المعقدة."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+} 
