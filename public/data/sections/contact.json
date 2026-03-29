@@ -95,16 +95,16 @@
             "items": [
                 {
                     "id": 1,
-                    "faIcon": "fa-solid fa-phone",
+                    "faIcon": "fa-brands fa-whatsapp",
                     "faIconColors": { "bg": "", "fill": "" },
                     "label": "+201093729234",
-                    "link": {"href": "tel:+201093729234", "tooltipString": "call_me"},
+                    "link": {"href": "https://wa.me/201093729234", "tooltipString": "whatsapp_me"},
                     "locales": {
-                        "en": {"title": "Phone"},
-                        "es": {"title": "Teléfono"},
-                        "fr": {"title": "Téléphone"},
-                        "ko": {"title": "전화"},
-                        "ar": {"title": "الهاتف"}
+                        "en": {"title": "WhatsApp"},
+                        "es": {"title": "WhatsApp"},
+                        "fr": {"title": "WhatsApp"},
+                        "ko": {"title": "왓츠앱"},
+                        "ar": {"title": "واتساب"}
                     }
                 },
                 {
