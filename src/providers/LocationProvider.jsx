@@ -16,13 +16,13 @@ function LocationProvider({ children, sections, categories }) {
     /** @constructs **/
     useEffect(() => {
         setDidMount(true)
-        window.addEventListener('popstate', _onHashEvent)
-        window.addEventListener('hashchange', _onHashEvent)
-        _onHashEvent()
+        window.addEventListener('popstate', _onLocationEvent)
+        window.addEventListener('hashchange', _onLocationEvent)
+        _onLocationEvent()
 
         return () => {
-            window.removeEventListener('popstate', _onHashEvent)
-            window.removeEventListener('hashchange', _onHashEvent)
+            window.removeEventListener('popstate', _onLocationEvent)
+            window.removeEventListener('hashchange', _onLocationEvent)
             setDidMount(false)
         }
     }, [])
@@ -60,7 +60,13 @@ function LocationProvider({ children, sections, categories }) {
     const goToSection = (section) => {
         if(!section || activeSectionId === section.id)
             return
-        window.location.hash = section.id
+
+        const url = new URL(window.location.href)
+        url.searchParams.set("route", section.id)
+        url.hash = ""
+        window.history.pushState({}, "", url.toString())
+
+        setNextSectionId(section.id)
     }
 
     const goToSectionWithId = (sectionId) => {
@@ -87,9 +93,24 @@ function LocationProvider({ children, sections, categories }) {
         }
     }
 
-    const _onHashEvent = () => {
-        const hash = window.location.hash.replace("#", "")
-        const targetSection = sections.find(section => section.id === hash)
+    const _onLocationEvent = () => {
+        const searchParams = new URLSearchParams(window.location.search)
+        const routeId = searchParams.get("route")
+        const categoryId = searchParams.get("category")
+        const hashId = window.location.hash.replace("#", "")
+
+        let targetSection = sections.find(section => section.id === routeId) ||
+                           sections.find(section => section.id === hashId)
+
+        if(!targetSection && categoryId) {
+            const category = categories.find(c => c.id === categoryId)
+            if(category) {
+                const historySectionId = visitHistoryByCategory[category.id]
+                const historySection = sections.find(s => s.id === historySectionId)
+                targetSection = historySection || category.sections[0]
+            }
+        }
+
         if(targetSection) {
             setNextSectionId(targetSection.id)
         }

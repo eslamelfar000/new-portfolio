@@ -15,6 +15,8 @@ import InputProvider from "/src/providers/InputProvider.jsx";
 import NavigationProvider from "/src/providers/NavigationProvider.jsx";
 import RTLWrapper from "/src/components/layout/RTLWrapper.jsx";
 import Portfolio from "/src/components/Portfolio.jsx";
+import QueryProvider from "/src/providers/QueryProvider.jsx";
+
 
 /** Initialization Script... **/
 let container = null;
@@ -55,8 +57,11 @@ const AppEssentialsWrapper = ({ children }) => {
   const [settings, setSettings] = useState();
 
   useEffect(() => {
-    if (window.location.pathname !== utils.file.BASE_URL)
-      window.history.pushState({}, "", utils.file.BASE_URL);
+    if (window.location.pathname !== utils.file.BASE_URL) {
+      const url = new URL(window.location.href);
+      url.pathname = utils.file.BASE_URL;
+      window.history.pushState({}, "", url.toString());
+    }
 
     utils.file.loadJSON("/data/settings.json").then((response) => {
       _applyDeveloperSettings(response);
@@ -114,11 +119,13 @@ const AppEssentialsWrapper = ({ children }) => {
 
   return (
     <StrictMode>
-      {settings && (
-        <Preloader preloaderSettings={settings["preloaderSettings"]}>
-          <DataProvider settings={settings}>{children}</DataProvider>
-        </Preloader>
-      )}
+      <QueryProvider>
+        {settings && (
+          <Preloader preloaderSettings={settings["preloaderSettings"]}>
+            <DataProvider settings={settings}>{children}</DataProvider>
+          </Preloader>
+        )}
+      </QueryProvider>
     </StrictMode>
   );
 };

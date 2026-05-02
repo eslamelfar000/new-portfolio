@@ -18,70 +18,21 @@ import { useStrapiApi } from "/src/hooks/strapiApi.js";
  */
 function ArticlePortfolioStrapi({ dataWrapper, id }) {
   const [selectedItemCategoryId, setSelectedItemCategoryId] = useState('all');
-  const [strapiData, setStrapiData] = useState({
-    projects: [],
-    categories: [],
-    loading: true,
-    error: null,
-  });
-
   const {
-    fetchProjects,
-    fetchCategories,
-    transformProjectData,
-    transformCategoryData,
+    useProjects,
+    useCategories
   } = useStrapiApi();
 
-  useEffect(() => {
-    const loadStrapiData = async () => {
-      try {
-        setStrapiData((prev) => ({ ...prev, loading: true, error: null }));
+  const { data: projects = [], isLoading: projectsLoading, error: projectsError } = useProjects();
+  const { data: categories = [], isLoading: categoriesLoading, error: categoriesError } = useCategories();
 
-        // Fetch both projects and categories
-        const [projectsResponse, categoriesResponse] = await Promise.all([
-          fetchProjects(),
-          fetchCategories(),
-        ]);
+  const strapiData = {
+    projects,
+    categories,
+    loading: projectsLoading || categoriesLoading,
+    error: projectsError?.message || categoriesError?.message || null,
+  };
 
-        if (!projectsResponse.success) {
-          throw new Error(
-            `Failed to fetch projects: ${projectsResponse.error}`
-          );
-        }
-
-        if (!categoriesResponse.success) {
-          throw new Error(
-            `Failed to fetch categories: ${categoriesResponse.error}`
-          );
-        }
-
-        // Transform the data
-        const transformedProjects = projectsResponse.data
-          .map(transformProjectData)
-          .filter((project) => project !== null); // Filter out projects with status false
-
-        const transformedCategories = categoriesResponse.data
-          .map(transformCategoryData)
-          .filter((category) => category !== null); // Filter out categories with status false
-
-        setStrapiData({
-          projects: transformedProjects,
-          categories: transformedCategories,
-          loading: false,
-          error: null,
-        });
-      } catch (error) {
-        console.error("Error loading Strapi data:", error);
-        setStrapiData((prev) => ({
-          ...prev,
-          loading: false,
-          error: error.message,
-        }));
-      }
-    };
-
-    loadStrapiData();
-  }, []);
 
   // Create a modified dataWrapper with dynamic categories
   const dynamicDataWrapper = {

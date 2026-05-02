@@ -1,8 +1,4 @@
-/**
- * @author Your Name
- * @date 2025-01-27
- * @description Strapi API service for portfolio projects and categories
- */
+import { useQuery, useMutation } from '@tanstack/react-query'
 
 const STRAPI_BASE_URL = 'https://refined-peace-3dcd962811.strapiapp.com/api'
 
@@ -13,9 +9,18 @@ export const useStrapiApi = () => {
         transformProjectData,
         transformCategoryData,
         fetchResume,
-        submitContactForm
+        submitContactForm,
+        // React Query Hooks
+        useProjects: useProjectsQuery,
+        useCategories: useCategoriesQuery,
+        useResume: useResumeQuery,
+        useSubmitContact: useContactMutation
     }
 }
+
+export { useProjectsQuery, useCategoriesQuery, useResumeQuery, useContactMutation }
+
+
 
 /**
  * Fetch projects from Strapi API
@@ -24,9 +29,24 @@ export const useStrapiApi = () => {
  */
 const fetchProjects = async (options = {}) => {
     try {
-        console.log('Fetching projects from:', `${STRAPI_BASE_URL}/project?populate=*`)
+        const queryParams = new URLSearchParams({
+            'fields[0]': 'title',
+            'fields[1]': 'subtitle',
+            'fields[2]': 'description',
+            'fields[3]': 'view_link',
+            'fields[4]': 'project_status',
+            'fields[5]': 'createdAt',
+            'fields[6]': 'documentId',
+            'populate[image][fields][0]': 'url',
+            'populate[image][fields][1]': 'formats',
+            'populate[image][fields][2]': 'alternativeText',
+            'populate[categories][fields][0]': 'name',
+            'populate[categories][fields][1]': 'category_status',
+            'populate[tags][fields][0]': 'name',
+            'sort': 'createdAt:desc'
+        })
         
-        const response = await fetch(`${STRAPI_BASE_URL}/project?populate=*`, {
+        const response = await fetch(`${STRAPI_BASE_URL}/project?${queryParams.toString()}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -308,6 +328,67 @@ const submitContactForm = async (formData, options = {}) => {
             meta: {}
         }
     }
+}
+
+/**
+ * React Query hook for projects
+ */
+const useProjectsQuery = (options = {}) => {
+    return useQuery({
+        queryKey: ['projects'],
+        queryFn: () => fetchProjects(options),
+        select: (response) => {
+            if (response.success) {
+                return response.data
+                    .map(transformProjectData)
+                    .filter(project => project !== null)
+            }
+            return []
+        }
+    })
+}
+
+/**
+ * React Query hook for categories
+ */
+const useCategoriesQuery = (options = {}) => {
+    return useQuery({
+        queryKey: ['categories'],
+        queryFn: () => fetchCategories(options),
+        select: (response) => {
+            if (response.success) {
+                return response.data
+                    .map(transformCategoryData)
+                    .filter(cat => cat !== null)
+            }
+            return []
+        }
+    })
+}
+
+/**
+ * React Query hook for resume
+ */
+const useResumeQuery = (options = {}) => {
+    return useQuery({
+        queryKey: ['resume'],
+        queryFn: () => fetchResume(options),
+        select: (response) => {
+            if (response.success) {
+                return response.data
+            }
+            return null
+        }
+    })
+}
+
+/**
+ * React Query mutation for contact form
+ */
+const useContactMutation = () => {
+    return useMutation({
+        mutationFn: (formData) => submitContactForm(formData)
+    })
 }
 
 export default useStrapiApi 

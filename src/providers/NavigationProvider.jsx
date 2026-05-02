@@ -221,7 +221,21 @@ function NavigationProvider({ children, sections, categories }) {
     const navigateToSectionWithLink = (href) => {
         setTransitionEnabled(true)
 
-        if(href.startsWith("#cat:")) {
+        if(href.includes("category=")) {
+            const categoryId = href.split("category=")[1].split("&")[0]
+            const category = categories.find(({ id }) => id === categoryId)
+            if(!category)
+                return
+
+            const sectionId = location.visitHistoryByCategory[category.id] || category.sections[0].id
+            navigateToSectionWithId(sectionId)
+        }
+        else if(href.includes("route=")) {
+            const sectionId = href.split("route=")[1].split("&")[0]
+            const section = sections.find(({ id }) => id === sectionId)
+            navigateToSection(section)
+        }
+        else if(href.startsWith("#cat:")) {
             const categoryId = href.replaceAll("#cat:", "")
             const category = categories.find(({ id }) => id === categoryId)
             if(!category)
@@ -245,7 +259,7 @@ function NavigationProvider({ children, sections, categories }) {
         const sectionLinks = sections.map(({ id, categoryId, faIcon, data }) => ({
             id,
             categoryId,
-            href: `#${id}`,
+            href: `?route=${id}`,
             label: language.getTranslation(data?.title?.locales, "title_short_nav"),
             faIcon,
             active: targetSection?.id === id
@@ -253,7 +267,7 @@ function NavigationProvider({ children, sections, categories }) {
 
         const categoryLinks = categories.map(({ id, faIcon, locales }) => ({
             id,
-            href: `#cat:${id}`,
+            href: `?category=${id}`,
             label: language.getTranslation(locales, "title"),
             faIcon,
             active: targetCategory?.id === id
