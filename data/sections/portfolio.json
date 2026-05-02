@@ -1,0 +1,316 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Portfolio}}"
+            },
+            "ar": {
+                "title_short": "المشاريع",
+                "title_short_nav": "المشاريع",
+                "title_long_prefix": "ألق نظرة على",
+                "title_long": "{{مشاريعي}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_lms": "LMS Systems",
+                    "category_web": "Web Applications",
+                    "category_ecommerce": "E-commerce"
+                },
+                "ar": {
+                    "category_all": "الكل",
+                    "category_lms": "أنظمة التعلم",
+                    "category_web": "تطبيقات الويب",
+                    "category_ecommerce": "التجارة الإلكترونية"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_lms", "category_web", "category_ecommerce"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_lms",
+                    "img": "",
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "#007bff", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Yalla LMS System",
+                            "text": "A feature-rich e-learning platform built with <b>React.js</b> and <b>Next.js</b>. Included interactive course dashboards, progress tracking, and student-teacher communication tools.",
+                            "tags": ["React.js", "Next.js", "LMS", "E-learning"]
+                        },
+                        "ar": {
+                            "title": "نظام يلا للتعلم",
+                            "text": "منصة تعليم إلكتروني غنية بالميزات مبنية بـ <b>React.js</b> و <b>Next.js</b>. تتضمن لوحات تفاعلية للدورات وتتبع التقدم وأدوات التواصل بين الطلاب والمعلمين.",
+                            "tags": ["React.js", "Next.js", "LMS", "التعلم الإلكتروني"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-comments",
+                    "faIconColors": {"bg": "#28a745", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Dine Chat Dashboard",
+                            "text": "A comprehensive restaurant management system featuring real-time chat, interactive maps, free-scroll hall for user interaction, two types of notification systems powered by <b>Firebase</b>, and a comprehensive ratings system.",
+                            "tags": ["React.js", "Firebase", "Real-time", "Dashboard"]
+                        },
+                        "ar": {
+                            "title": "لوحة تحكم دين تشات",
+                            "text": "نظام شامل لإدارة المطاعم يتضمن دردشة فورية وخريطة تفاعلية وقاعة تمرير مجاني لتفاعل المستخدمين ونوعين من أنظمة الإشعارات المدعومة بـ <b>Firebase</b> ونظام تقييم شامل.",
+                            "tags": ["React.js", "Firebase", "فوري", "لوحة التحكم"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_ecommerce",
+                    "img": "",
+                    "faIcon": "fa-solid fa-shopping-cart",
+                    "faIconColors": {"bg": "#dc3545", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "SIMRACING Corner Ecommerce",
+                            "text": "A <b>WordPress</b> e-commerce website offering sim racing products from brands like Simagic and Pimax, including wheel bases and pedals.",
+                            "tags": ["WordPress", "E-commerce", "Sim Racing"]
+                        },
+                        "ar": {
+                            "title": "متجر سيم ريسينج كورنر",
+                            "text": "موقع <b>WordPress</b> للتجارة الإلكترونية يقدم منتجات سباق المحاكاة من علامات تجارية مثل Simagic و Pimax، بما في ذلك قواعد العجلات والدواسات.",
+                            "tags": ["WordPress", "التجارة الإلكترونية", "سباق المحاكاة"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-building",
+                    "faIconColors": {"bg": "#6f42c1", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "UTC - Technology Company Portfolio",
+                            "text": "A technology company portfolio website showcasing 20 years of experience in comprehensive services like security barriers and parking control systems.",
+                            "tags": ["Portfolio", "Technology", "Security Systems"]
+                        },
+                        "ar": {
+                            "title": "UTC - محفظة شركة التكنولوجيا",
+                            "text": "موقع محفظة شركة تكنولوجيا يعرض 20 عاماً من الخبرة في خدمات شاملة مثل الحواجز الأمنية وأنظمة التحكم في المواقف.",
+                            "tags": ["المحفظة", "التكنولوجيا", "الأنظمة الأمنية"]
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "categoryId": "category_lms",
+                    "img": "",
+                    "faIcon": "fa-solid fa-brain",
+                    "faIconColors": {"bg": "#ffc107", "fill": "#000"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "First Step - LMS System",
+                            "text": "Advanced LMS with <b>AI support</b> and custom platform design for tailored educational experiences. Robust security features and comprehensive student performance tracking with immediate technical support.",
+                            "tags": ["React.js", "AI", "LMS", "Custom Design"]
+                        },
+                        "ar": {
+                            "title": "الخطوة الأولى - نظام التعلم",
+                            "text": "نظام تعلم متقدم مع <b>دعم الذكاء الاصطناعي</b> وتصميم منصة مخصص للتجارب التعليمية المخصصة. ميزات أمان قوية وتتبع شامل لأداء الطلاب مع دعم فني فوري.",
+                            "tags": ["React.js", "الذكاء الاصطناعي", "LMS", "تصميم مخصص"]
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "categoryId": "category_lms",
+                    "img": "",
+                    "faIcon": "fa-solid fa-users",
+                    "faIconColors": {"bg": "#20c997", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "JAW - LMS System",
+                            "text": "Free, user-friendly LMS with interactive lessons and quizzes for students and educators. Supports anytime, anywhere access with features for course creation and student progress tracking.",
+                            "tags": ["React.js", "Free LMS", "Interactive", "User-friendly"]
+                        },
+                        "ar": {
+                            "title": "JAW - نظام التعلم",
+                            "text": "نظام تعلم مجاني وسهل الاستخدام مع دروس تفاعلية واختبارات للطلاب والمعلمين. يدعم الوصول في أي وقت وأي مكان مع ميزات إنشاء الدورات وتتبع تقدم الطلاب.",
+                            "tags": ["React.js", "LMS مجاني", "تفاعلي", "سهل الاستخدام"]
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-cogs",
+                    "faIconColors": {"bg": "#fd7e14", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "FOCUS - CRM & ERP System",
+                            "text": "Comprehensive school management system with ERP solutions and customization options. Used by major school districts, offering 24/7 support and tools for various management aspects.",
+                            "tags": ["React.js", "TypeScript", "CRM", "ERP"]
+                        },
+                        "ar": {
+                            "title": "FOCUS - نظام إدارة العلاقات والمؤسسات",
+                            "text": "نظام شامل لإدارة المدارس مع حلول ERP وخيارات التخصيص. يستخدمه مناطق مدرسية رئيسية، ويقدم دعم 24/7 وأدوات لمختلف جوانب الإدارة.",
+                            "tags": ["React.js", "TypeScript", "CRM", "ERP"]
+                        }
+                    }
+                },
+                {
+                    "id": 8,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-briefcase",
+                    "faIconColors": {"bg": "#6c757d", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Focus CRM Portfolio",
+                            "text": "WordPress platform providing integrated business management tools with customization. Offers 24/7 support and includes LMS and supply chain management for educational and business needs.",
+                            "tags": ["WordPress", "CRM", "Business Management", "LMS"]
+                        },
+                        "ar": {
+                            "title": "محفظة Focus CRM",
+                            "text": "منصة WordPress توفر أدوات إدارة الأعمال المتكاملة مع التخصيص. تقدم دعم 24/7 وتتضمن LMS وإدارة سلسلة التوريد للاحتياجات التعليمية والتجارية.",
+                            "tags": ["WordPress", "CRM", "إدارة الأعمال", "LMS"]
+                        }
+                    }
+                },
+                {
+                    "id": 9,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "#17a2b8", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "First Step LMS Portfolio",
+                            "text": "Showcases LMS with AI support and advanced security, built with React JS. Offers content hosting, marketing services, and a control panel for course management.",
+                            "tags": ["WordPress", "LMS", "AI Support", "React JS"]
+                        },
+                        "ar": {
+                            "title": "محفظة الخطوة الأولى LMS",
+                            "text": "تعرض LMS مع دعم الذكاء الاصطناعي وأمان متقدم، مبني بـ React JS. تقدم استضافة المحتوى وخدمات التسويق ولوحة تحكم لإدارة الدورات.",
+                            "tags": ["WordPress", "LMS", "دعم الذكاء الاصطناعي", "React JS"]
+                        }
+                    }
+                },
+                {
+                    "id": 10,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-school",
+                    "faIconColors": {"bg": "#e83e8c", "fill": "#fff"},
+                    "preview": {
+                        "links": [
+                            {"href": "#", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Icon School LMS Portfolio",
+                            "text": "Offers interactive, hands-on learning in tech skills with project-based learning and STEAM focus. Provides both online and in-person courses with certification and ongoing support.",
+                            "tags": ["WordPress", "LMS", "STEAM", "Project-based Learning"]
+                        },
+                        "ar": {
+                            "title": "محفظة أيقونة سكول LMS",
+                            "text": "تقدم تعليماً تفاعلياً وعملياً في المهارات التقنية مع التعلم القائم على المشاريع وتركيز STEAM. توفر دورات عبر الإنترنت وشخصياً مع شهادات ودعم مستمر.",
+                            "tags": ["WordPress", "LMS", "STEAM", "التعلم القائم على المشاريع"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

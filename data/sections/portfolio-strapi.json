@@ -1,0 +1,47 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Portfolio}}"
+            },
+            "ar": {
+                "title_short": "المشاريع",
+                "title_short_nav": "المشاريع",
+                "title_long_prefix": "ألق نظرة على",
+                "title_long": "{{مشاريعي}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolioStrapi",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_lms": "LMS Systems",
+                    "category_web": "Web Applications",
+                    "category_ecommerce": "E-commerce",
+                    "category_wordpress": "WordPress"
+                },
+                "ar": {
+                    "category_all": "الكل",
+                    "category_lms": "أنظمة التعلم",
+                    "category_web": "تطبيقات الويب",
+                    "category_ecommerce": "التجارة الإلكترونية",
+                    "category_wordpress": "ووردبريس"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_lms", "category_web", "category_ecommerce", "category_wordpress"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": []
+        }
+    ]
+} 

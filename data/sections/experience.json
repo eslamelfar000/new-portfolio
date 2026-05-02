@@ -1,0 +1,144 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Experience",
+                "title_short_nav": "Experience",
+                "title_long_prefix": "Summary of my",
+                "title_long": "{{Work}} Experience"
+            },
+            "ar": {
+                "title_short": "الخبرة",
+                "title_short_nav": "الخبرة",
+                "title_long_prefix": "ملخص",
+                "title_long": "{{خبرتي}} العملية"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "dateStart"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-briefcase",
+                    "faIconColors": {"bg": "#007bff", "fill": "#fff"},
+                    "dateStart": {"year": 2021, "month": 3},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "{{Front End}} Developer & Web Designer",
+                            "province": "Damietta",
+                            "country": "Egypt",
+                            "institution": "Freelance",
+                            "text": "Developed 10+ responsive websites using HTML, CSS, Bootstrap, TailwindCSS, React.js, and Next.js, maintaining 90%+ client satisfaction. Enhanced website speed by 35% via optimization techniques.",
+                            "list": [
+                                "Developed 10+ responsive websites using HTML, CSS, Bootstrap, TailwindCSS, React.js, and Next.js",
+                                "Enhanced website speed by 35% via optimization techniques (image compression, minification, lazy loading)",
+                                "Built interactive UI components with JavaScript/jQuery, reducing bounce rates by 15-20%"
+                            ],
+                            "tags": ["React.js", "Next.js", "HTML", "CSS", "Bootstrap", "TailwindCSS", "JavaScript", "jQuery"]
+                        },
+                        "ar": {
+                            "title": "مطور {{واجهة أمامية}} ومصمم ويب",
+                            "province": "دمياط",
+                            "country": "مصر",
+                            "institution": "عمل حر",
+                            "text": "طورت أكثر من 10 مواقع ويب متجاوبة باستخدام HTML و CSS و Bootstrap و TailwindCSS و React.js و Next.js، مع الحفاظ على رضا العملاء بنسبة 90%+. حسنت سرعة الموقع بنسبة 35% عبر تقنيات التحسين.",
+                            "list": [
+                                "طورت أكثر من 10 مواقع ويب متجاوبة باستخدام HTML و CSS و Bootstrap و TailwindCSS و React.js و Next.js",
+                                "حسنت سرعة الموقع بنسبة 35% عبر تقنيات التحسين (ضغط الصور، التصغير، التحميل البطيء)",
+                                "بنيت مكونات واجهة تفاعلية باستخدام JavaScript/jQuery، مما قلل معدل الارتداد بنسبة 15-20%"
+                            ],
+                            "tags": ["React.js", "Next.js", "HTML", "CSS", "Bootstrap", "TailwindCSS", "JavaScript", "jQuery"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-building",
+                    "faIconColors": {"bg": "#28a745", "fill": "#fff"},
+                    "dateStart": {"year": 2023, "month": 5},
+                    "dateEnd": {"year": 2024, "month": 9},
+                    "locales": {
+                        "en": {
+                            "title": "{{Front End}} & WordPress Developer",
+                            "province": "Dokki",
+                            "country": "Egypt",
+                            "institution": "7P Marketing & Software Company",
+                            "text": "Led development of a flagship web app that increased user engagement by 30% and client retention by 15% through enhanced UI/UX. Optimized performance to eliminate load delays.",
+                            "list": [
+                                "Led development of a flagship web app that increased user engagement by 30% and client retention by 15%",
+                                "Optimized performance to eliminate load delays, boosting mobile satisfaction by 20%",
+                                "Created reusable React.js components across 5+ applications, cutting future dev time by 25%",
+                                "Collaborated with cross-functional teams to deliver seamless user experiences"
+                            ],
+                            "tags": ["React.js", "WordPress", "UI/UX", "Performance Optimization", "Team Collaboration"]
+                        },
+                        "ar": {
+                            "title": "مطور {{واجهة أمامية}} و WordPress",
+                            "province": "الدقي",
+                            "country": "مصر",
+                            "institution": "شركة 7P للتسويق والبرمجيات",
+                            "text": "قادت تطوير تطبيق ويب رئيسي زاد من تفاعل المستخدمين بنسبة 30% واحتفاظ العملاء بنسبة 15% من خلال تحسين واجهة المستخدم. حسنت الأداء لإزالة تأخيرات التحميل.",
+                            "list": [
+                                "قادت تطوير تطبيق ويب رئيسي زاد من تفاعل المستخدمين بنسبة 30% واحتفاظ العملاء بنسبة 15%",
+                                "حسنت الأداء لإزالة تأخيرات التحميل، مما زاد من رضا المستخدمين المحمولين بنسبة 20%",
+                                "أنشأت مكونات React.js قابلة لإعادة الاستخدام عبر 5+ تطبيقات، مما قلل وقت التطوير المستقبلي بنسبة 25%",
+                                "تعاونت مع فرق متعددة الوظائف لتقديم تجارب مستخدم سلسة"
+                            ],
+                            "tags": ["React.js", "WordPress", "UI/UX", "تحسين الأداء", "التعاون الجماعي"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "#dc3545", "fill": "#fff"},
+                    "dateStart": {"year": 2025, "month": 5},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "{{Front End}} & WordPress Developer",
+                            "province": "Dokki",
+                            "country": "Egypt",
+                            "institution": "7P Marketing & Software Company",
+                            "text": "Continuing to lead front-end development initiatives with focus on React.js applications and WordPress solutions. Specializing in creating scalable and high-performance web applications.",
+                            "list": [
+                                "Leading front-end development for multiple client projects",
+                                "Specializing in React.js and Next.js applications",
+                                "Creating responsive and accessible web interfaces",
+                                "Optimizing website performance and user experience"
+                            ],
+                            "tags": ["React.js", "Next.js", "WordPress", "Front-end Development", "Performance Optimization"]
+                        },
+                        "ar": {
+                            "title": "مطور {{واجهة أمامية}} و WordPress",
+                            "province": "الدقي",
+                            "country": "مصر",
+                            "institution": "شركة 7P للتسويق والبرمجيات",
+                            "text": "أستمر في قيادة مبادرات تطوير الواجهة الأمامية مع التركيز على تطبيقات React.js وحلول WordPress. متخصص في إنشاء تطبيقات ويب قابلة للتطوير وعالية الأداء.",
+                            "list": [
+                                "قيادة تطوير الواجهة الأمامية لمشاريع عملاء متعددة",
+                                "التخصص في تطبيقات React.js و Next.js",
+                                "إنشاء واجهات ويب متجاوبة وقابلة للوصول",
+                                "تحسين أداء الموقع وتجربة المستخدم"
+                            ],
+                            "tags": ["React.js", "Next.js", "WordPress", "تطوير الواجهة الأمامية", "تحسين الأداء"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

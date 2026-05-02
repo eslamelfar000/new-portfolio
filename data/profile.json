@@ -1,0 +1,38 @@
+{
+    "name": "Eslam Saber Elfar",
+
+    "profilePictureUrl": "images/my-img.jpg",
+    "resumePdfUrl": "Eslam_Elfar_(Frontend_developer)_CV.pdf",
+
+    "statusCircleVisible": true,
+    "statusCircleVariant": "available",
+    "statusCircleHoverMessage": "status_message_available_for_freelance",
+
+    "locales": {
+        "en": {
+            "localized_name": "Eslam Saber Elfar",
+            "localized_name_stylized": " [[Eslam {{Saber}} {{Elfar}}]]",
+            "status_message_available_for_freelance": "Available for freelance!",
+            "roles": [
+                "Front End Developer",
+                "React JS Developer",
+                "Next JS Developer",
+                "WordPress Developer"
+            ],
+            "name_pronunciation_ipa": "/eslam saber elfar/",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+        },
+        "ar": {
+            "localized_name": "إسلام صابر الفار",
+            "localized_name_stylized": "{{إسلام}} {{صابر}} {{الفار}}",
+            "status_message_available_for_freelance": "متاح للعمل المستقل!",
+            "roles": [
+                "مطور واجهة أمامية",
+                "مطور React JS",
+                "مطور Next JS"
+            ],
+            "name_pronunciation_ipa": "/eslam saber elfar/",
+            "name_pronunciation_audio_url": "audio/arabic-name-pronunciation.mp3"
+        }
+    }
+}
